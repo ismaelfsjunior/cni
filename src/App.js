@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./components/Navbar/index.js";
+import Routes from "./routes";
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Routes />
     </div>
   );
 }
