@@ -6,17 +6,21 @@
 
 .card-Img {
     margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    width: 16rem !important;
-    height: 10rem !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    width: 8rem !important;
+    height: 4rem !important;
+}
+
+img {
+    height: 1rem !important;
 }
 
 .img-footer {
     margin: auto;
-    margin-top: 2rem;
     margin-bottom: 0;
-    width: 5rem !important;
+    width: 3rem !important;
     height: 3rem !important;
 }
 
@@ -33,4 +37,8 @@
     #printPageButton {
       display: none;
     }
-  }  
+}  
+
+.card-text-p {
+    margin: 0;
+}
