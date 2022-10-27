@@ -1,0 +1,36 @@
+.cards {
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.card-Img {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    width: 16rem !important;
+    height: 10rem !important;
+}
+
+.img-footer {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    width: 5rem !important;
+    height: 3rem !important;
+}
+
+.qrcode {
+    margin: auto;
+}
+
+.btn-zap {
+    margin: auto;
+    margin-top: 2rem;
+}
+
+@media print {
+    #printPageButton {
+      display: none;
+    }
+  }  
