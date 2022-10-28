@@ -31,7 +31,7 @@ const Cadastro = () => {
                             </Col>
                             <Col>
                             <div>
-                            <a href={"Newpage?cpf=" + data.cpf}>QRCode</a>
+                            <a href={"Newpage?cpf=" + data.cpf + "&nome=" + data.nome} >QRCode</a>
                              </div> 
                             </Col>
                             <hr/>  

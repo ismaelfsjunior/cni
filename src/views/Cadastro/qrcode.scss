@@ -1,7 +1,13 @@
 .cards {
     margin: auto;
     width: auto;
-    height: auto;
+    height: auto;   
+}
+
+.card--back {
+    // background-image: url("../../assets/natal2.png");
+    // background-size: cover;
+    // background-position: center;
 }
 
 .card-Img {
@@ -35,7 +41,7 @@ img {
 
 @media print {
     #printPageButton {
-      display: none;
+       display: none;
     }
 }  
 
