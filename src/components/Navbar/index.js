@@ -10,10 +10,9 @@ const Navigation = () => (
                 <Navbar.Brand href="#home">
                 <img
                     src={logo}
-                    width="150"
-                    height="70"
-                    className="d-inline-block align-top"
-                    alt="Magbank"
+                    width="100"
+                    className=""
+                    alt="CNI"
                 />            
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
