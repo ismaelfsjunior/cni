@@ -21,6 +21,7 @@ const Navigation = () => (
                     <Nav.Link href="#servicos">Serviços</Nav.Link>
                     <Nav.Link href="#empresa">Empresa</Nav.Link>
                     <Nav.Link href="#contato">Contato</Nav.Link>
+                    <Nav.Link href="Newcad">Cadastro Confraternização</Nav.Link>
                 </Nav>
                     <ButtonGroup aria-label="Basic example">
                         <Button variant="">

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { FaQrcode } from 'react-icons/fa';
+import { MdDeleteForever } from 'react-icons/md';
 import api from './api';
+import "./cadlist.scss";
 
 class App extends Component {
 
@@ -35,8 +37,12 @@ class App extends Component {
                 </Col>  
                 <Col className='text-center'>
                     <strong> Gerar QRCode </strong>
-                    <p><a href={"Newpage?cpf=" + list.cadastro.cpf + "&nome=" + list.cadastro.nome} ><FaQrcode /></a></p>              
+                    <p className='qrlist-icon'><a href={"Newpage?cpf=" + list.cadastro.cpf + "&nome=" + list.cadastro.nome} ><FaQrcode /></a></p>              
                 </Col>
+                <Col className='text-center'>
+                    <strong> Deletar </strong>
+                    <p className='qrlist-icon'><a href={"http://cninefro.com.br/apidelete/convidado_delete.php?cpf=" + list.cadastro.cpf} ><MdDeleteForever /></a></p>              
+                </Col>                
                 <hr></hr>
             </Row>
           </li>
