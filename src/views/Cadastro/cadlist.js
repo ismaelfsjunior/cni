@@ -29,7 +29,7 @@ class App extends Component {
             <Row className='lg'>
                 <Col>
                     <strong>Nome: </strong>
-                    <h5>{list.cadastro.nome}</h5>
+                    <h5>{list.cadastro.id} - {list.cadastro.nome}<strong>F: </strong>{list.cadastro.tipo}</h5>
                 </Col> 
                 <Col>
                     <strong> CPF </strong>

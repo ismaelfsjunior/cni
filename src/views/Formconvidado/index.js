@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Button, Container} from "react-bootstrap";
 import Navbar from "../../components/Navbar";
 import "./index.scss";
@@ -6,26 +6,7 @@ import logocni from '../../assets/logo.png';
 import logocdr from '../../assets/logo-cdr.png';
 
 const Formcad = () => {
-  const [selectValue, setSelectValue] = useState('');  
-  const list = [
-    {id: '', name: 'Selecione uma opção'},
-    {id: 1, name: 'Funcionario'},
-    {id: 2, name: 'Prestador de serviços'},
-    {id: 3, name: 'Convidado'},
-    {id: 4, name: 'Acompanhante'},
-  ];
 
-useEffect(() => {    
-  const el = document.querySelectorAll("div[id=divcodpai]"); 
-
-  if (selectValue === '4'){
-    el[0].setAttribute('style', 'display:block');
-    document.getElementById("idpai").required = true;
-  }else{
-    el[0].setAttribute('style', 'display:none');
-    document.getElementById("idpai").required = false;
-  }
-});
       return (
           <div>
               <Navbar />
@@ -51,22 +32,16 @@ useEffect(() => {
                                   <input type="text" id="cpf" name="cpf" placeholder="Digite o seu CPF" required />
                               </div>
   
-                              {/* <select className="input-group" aria-label="Default select example" onclick={"selected(this.value)"}  required>
-                                <option value="">Selecione uma opção</option>
-                                <option value="1">Funcionario</option>
-                                <option value="2">Prestador de serviços</option>
-                                <option value="3">Convidado</option>
-                                <option value="4">Acompanhante</option>
-                              </select> */}
-                              <select className="input-group"  value={selectValue} onChange={e => setSelectValue(e.target.value)} required>
-                                {list.map((item, index) => (
-                                  <option key={index} value={item.id}>{item.name}</option>
-                                ))}        
-                              </select>                              
-                              <div className="divcodpai input-group" id="divcodpai">
-                                  <label>Codigo convidado no qrcode</label>
-                                  <input type="text" id="idpai" name="idpai" placeholder="codigo convidado" />
+                              <div className="form-check form-switch">
+                                <input className="form-check-input" type="checkbox" role="switch" id="Checkfuncioanrio" />
+                                <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Você funcionario?</label>
                               </div>
+
+                              <div className="form-check form-switch">
+                                <input className="form-check-input" type="checkbox" role="switch" id="Checkconvidado" />
+                                <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Você onvidado?</label>
+                              </div>
+
                               <div>
                                   <Button className="mt-3" variant="success" id="cadastrar" name="cadastrar" type="submit" value="cadastrar">
                                     Salvar

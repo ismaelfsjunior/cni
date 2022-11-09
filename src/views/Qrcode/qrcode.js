@@ -21,7 +21,7 @@ const qrcode = () => {
     return(
         <Container className="">
             <div className="cards">
-                <Card className="d-flex justify-content-center text-center">
+                <Card className="card--back d-flex justify-content-center text-center">
                 <Row className="d-flex justify-content-center">
                         <Col className="ps-5">
                             <Card.Img
@@ -42,7 +42,7 @@ const qrcode = () => {
                             />
                         </Col>
                     </Row>                    
-                    <Card.Title className="mt-3 fs-1 fw-bold">Convite Individual</Card.Title>
+                    <Card.Title className="fs-1 fw-bold">Convite Individual</Card.Title>
                         <Card.Text>
                             <p className="mt-2 fs-6 card-text-p fw-bold">Chegou o final de mais um ano de muito trabalho e sucesso!</p> 
                             <p className="mt-2 px-4 fs-6 card-text-p fw-bold">Aproveitamos  para agradecer a todos pela incansável dedicação demonstrada ao longo deste ano e desejar a todos um Natal abençoado, repleto de muitas felicidades e um Feliz 2023!</p>
@@ -51,7 +51,7 @@ const qrcode = () => {
                 <QRCode className="qrcode"
                     value={cpf} 
                     size={256}
-                    style={{ height: "26rem",maxWidth: "100%", width: "90%" }}
+                    style={{ height: "16rem",maxWidth: "100%", width: "90%" }}
                     viewBox={`0 0 256 256`}                
                 />
                 <p className="card-text-p fw-bold">{nome}</p>
