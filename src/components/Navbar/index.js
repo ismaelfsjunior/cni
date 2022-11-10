@@ -21,7 +21,9 @@ const Navigation = () => (
                     <Nav.Link href="#servicos">Serviços</Nav.Link>
                     <Nav.Link href="#empresa">Empresa</Nav.Link>
                     <Nav.Link href="#contato">Contato</Nav.Link>
-                    <Nav.Link href="Newcad">Cadastro Confraternização</Nav.Link>
+                    {/* <Nav.Link href="Newcad">Cadastro Confraternização</Nav.Link> */}
+                    <Button href="Newcad" variant="btn btn-primary">Cadastro Confraternização</Button>
+                    <Nav.Link href="#contato">.</Nav.Link>
                 </Nav>
                     <ButtonGroup aria-label="Basic example">
                         <Button variant="">
@@ -30,7 +32,7 @@ const Navigation = () => (
                                 <NavDropdown.Item href="Gerar_convite">Gerar convite</NavDropdown.Item>
                             </NavDropdown>
                         </Button>
-                        <Button variant="btn btn-primary">Converir convite</Button>
+                        <Button variant="btn btn-success">Converir convite</Button>
                     </ButtonGroup>
                 </Navbar.Collapse>
             </Container>
