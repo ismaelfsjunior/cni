@@ -15,17 +15,55 @@ const Formcad = () => {
     {id: 4, name: 'Acompanhante'},
   ];
 
-useEffect(() => {    
+  const Validacpf = () => {
+    const elbutton = document.querySelectorAll("div[id=elbutton]"); 
+    let strCPF = document.getElementById("cpf").value;
+    let Soma;
+    let Resto;
+    let ok = 'S';
+    strCPF = strCPF.replace(/\D/g, ''); // Permite apenas números
+    if(strCPF){
+      Soma = 0;
+      if (strCPF === "00000000000") {
+        ok = 'N';
+      }
+      let i;
+      for (i = 1; i <= 9; i++) Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (11 - i);
+      Resto = (Soma * 10) % 11;
+  
+      if ((Resto === 10) || (Resto === 11)) Resto = 0;
+      if (Resto !== parseInt(strCPF.substring(9, 10))) {
+        ok = 'N'
+      }
+  
+      Soma = 0;
+      for (i = 1; i <= 10; i++) Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (12 - i);
+      Resto = (Soma * 10) % 11;
+  
+      if ((Resto === 10) || (Resto === 11)) Resto = 0;
+      if (Resto !== parseInt(strCPF.substring(10, 11))) {
+        ok = 'N'
+      }
+      if(ok === 'N'){
+        alert("O campo cpf é inválido! Preencha com um CPF válido por favor.");
+        elbutton[0].setAttribute('style', 'pointer-events:none');
+      }else{
+        elbutton[0].setAttribute('style', 'pointer-events:visible');
+      }
+    }
+  };
+
+  useEffect(() => {    
   const el = document.querySelectorAll("div[id=divcodpai]"); 
 
-  if (selectValue === '4'){
-    el[0].setAttribute('style', 'display:block');
-    document.getElementById("idpai").required = true;
-  }else{
-    el[0].setAttribute('style', 'display:none');
-    document.getElementById("idpai").required = false;
-  }
-});
+    if (selectValue === '4'){
+      el[0].setAttribute('style', 'display:block');
+      document.getElementById("idpai").required = true;
+    }else{
+      el[0].setAttribute('style', 'display:none');
+      document.getElementById("idpai").required = false;
+    }
+  });
       return (
           <div>
               <Navbar />
@@ -48,7 +86,7 @@ useEffect(() => {
   
                               <div className="input-group">
                                   <label htmlFor="cpf">CPF</label>
-                                  <input type="text" id="cpf" name="cpf" placeholder="Digite o seu CPF" required />
+                                  <input type="text" id="cpf" name="cpf" placeholder="Digite o seu CPF" onBlur={Validacpf} required />
                               </div>
   
                               <select className="input-group"  value={selectValue} onChange={e => setSelectValue(e.target.value)} id="tipo" name="tipo"  required>
@@ -60,7 +98,7 @@ useEffect(() => {
                                   <label>Codigo convidado no qrcode</label>
                                   <input type="text" id="idpai" name="idpai" placeholder="codigo convidado" />
                               </div>
-                              <div>
+                              <div id="elbutton" className="elbutton">
                                   <Button className="mt-3" variant="success" id="cadastrar" name="cadastrar" type="submit" value="cadastrar">
                                     Salvar
                                   </Button>
