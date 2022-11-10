@@ -10,6 +10,7 @@ import down from '../../assets/download.png';
 const urlParams = new URLSearchParams(window.location.search);
 const cpf = urlParams.get('cpf');
 const nome = urlParams.get('nome');
+const numid = urlParams.get('id');
 
 const qrcode = () => {  
     const download = () => {
@@ -45,8 +46,8 @@ const qrcode = () => {
                     <Card.Title className="fs-1 fw-bold">Convite Individual</Card.Title>
                         <Card.Text>
                             <p className="mt-2 fs-6 card-text-p fw-bold">Chegou o final de mais um ano de muito trabalho e sucesso!</p> 
-                            <p className="mt-2 px-4 fs-6 card-text-p fw-bold">Aproveitamos  para agradecer a todos pela incansável dedicação demonstrada ao longo deste ano e desejar a todos um Natal abençoado, repleto de muitas felicidades e um Feliz 2023!</p>
-                            <p className="mt-2 px-4 fs-6 card-text-p fw-bold">Desta forma, Convidamos você para Festa deConfraternização CNI & CDR que se realizará dia 10 de dezembro  de 2022, às 20:00h no El Shaddai Eventos.</p>                            
+                            <p className="mt-2 px-4 fs-6 card-text-p fw-bold">Aproveitamos para agradecer a todos pela incansável dedicação demonstrada ao longo deste ano e desejar a todos um Natal abençoado, repleto de muitas felicidades e um Feliz 2023!</p>
+                            <p className="mt-2 px-4 fs-6 card-text-p fw-bold">Desta forma, convidamos você para festa de confraternização CNI & CDR que se realizará dia 10 de dezembro de 2022, às 20:00h no El Shaddai Eventos.</p>                            
                         </Card.Text>                    
                 <QRCode className="qrcode"
                     value={cpf} 
@@ -54,10 +55,10 @@ const qrcode = () => {
                     style={{ height: "16rem",maxWidth: "100%", width: "90%" }}
                     viewBox={`0 0 256 256`}                
                 />
-                <p className="card-text-p fw-bold">{nome}</p>
+                <p className="card-text-p fw-bold">{numid} - {nome}</p>
                 <Card.Body>
                     <Card.Text>
-                        <p className="fs-5 card-text-p fw-bold">Este convite é pessoal e instransferivel.</p>
+                        <p className="fs-5 card-text-p fw-bold">Este convite é pessoal e intransferível.</p>
                         <p className="mt-2 fs-5 card-text-p fw-bold">É obrigatória a apresentação do documento com foto.</p>
                         <p className="mt-2 fs-5 card-text-p fw-bold">Sua presença é indispensável!</p>
                     </Card.Text>

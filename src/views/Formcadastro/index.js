@@ -51,14 +51,7 @@ useEffect(() => {
                                   <input type="text" id="cpf" name="cpf" placeholder="Digite o seu CPF" required />
                               </div>
   
-                              {/* <select className="input-group" aria-label="Default select example" onclick={"selected(this.value)"}  required>
-                                <option value="">Selecione uma opção</option>
-                                <option value="1">Funcionario</option>
-                                <option value="2">Prestador de serviços</option>
-                                <option value="3">Convidado</option>
-                                <option value="4">Acompanhante</option>
-                              </select> */}
-                              <select className="input-group"  value={selectValue} onChange={e => setSelectValue(e.target.value)} required>
+                              <select className="input-group"  value={selectValue} onChange={e => setSelectValue(e.target.value)} id="tipo" name="tipo"  required>
                                 {list.map((item, index) => (
                                   <option key={index} value={item.id}>{item.name}</option>
                                 ))}        

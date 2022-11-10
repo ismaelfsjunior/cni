@@ -29,7 +29,7 @@ class App extends Component {
             <Row className='lg'>
                 <Col>
                     <strong>Nome: </strong>
-                    <h5>{list.cadastro.id} - {list.cadastro.nome}<strong>F: </strong>{list.cadastro.tipo}</h5>
+                    <h5>{list.cadastro.id} - {list.cadastro.nome}<strong> Tipo: </strong>{list.cadastro.tipo}</h5>
                 </Col> 
                 <Col>
                     <strong> CPF </strong>
@@ -37,7 +37,7 @@ class App extends Component {
                 </Col>  
                 <Col className='text-center'>
                     <strong> Gerar QRCode </strong>
-                    <p className='qrlist-icon'><a href={"Newpage?cpf=" + list.cadastro.cpf + "&nome=" + list.cadastro.nome} ><FaQrcode /></a></p>              
+                    <p className='qrlist-icon'><a href={"Newpage?cpf=" + list.cadastro.cpf + "&nome=" + list.cadastro.nome + "&id=" + list.cadastro.id} ><FaQrcode /></a></p>              
                 </Col>
                 <Col className='text-center'>
                     <strong> Deletar </strong>

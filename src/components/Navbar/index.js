@@ -26,7 +26,7 @@ const Navigation = () => (
                     <ButtonGroup aria-label="Basic example">
                         <Button variant="">
                             <NavDropdown title="Acessos">
-                                <NavDropdown.Item href="cadastro">Cadastros</NavDropdown.Item>
+                                <NavDropdown.Item href="#cadastro">Cadastros</NavDropdown.Item>
                                 <NavDropdown.Item href="Gerar_convite">Gerar convite</NavDropdown.Item>
                             </NavDropdown>
                         </Button>
