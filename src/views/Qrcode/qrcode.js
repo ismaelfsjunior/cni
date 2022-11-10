@@ -47,7 +47,8 @@ const qrcode = () => {
                         <Card.Text>
                             <p className="mt-2 fs-6 card-text-p fw-bold">Chegou o final de mais um ano de muito trabalho e sucesso!</p> 
                             <p className="mt-2 px-4 fs-6 card-text-p fw-bold">Aproveitamos para agradecer a todos pela incansável dedicação demonstrada ao longo deste ano e desejar a todos um Natal abençoado, repleto de muitas felicidades e um Feliz 2023!</p>
-                            <p className="mt-2 px-4 fs-6 card-text-p fw-bold">Desta forma, convidamos você para festa de confraternização CNI & CDR que se realizará dia 10 de dezembro de 2022, às 20:00h no El Shaddai Eventos.</p>                            
+                            <p className="mt-2 px-4 fs-6 card-text-p fw-bold">Desta forma, convidamos você para festa de confraternização CNI & CDR que se realizará dia 10 de dezembro de 2022, às 20:00h  no</p>
+                            <p className="px-4 fs-4 card-text-p fw-bold">El Shaddai Eventos.</p>                            
                         </Card.Text>                    
                 <QRCode className="qrcode"
                     value={cpf} 
