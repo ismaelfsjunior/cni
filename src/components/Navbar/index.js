@@ -24,6 +24,8 @@ const Navigation = () => (
                     {/* <Nav.Link href="Newcad">Cadastro Confraternização</Nav.Link> */}
                     <Button href="Newcad" variant="btn btn-primary">Cadastro Confraternização</Button>
                     <Nav.Link href="#contato">.</Nav.Link>
+                    <Button href="consultacadastro" variant="btn btn-secondary">Consultar Qrcode</Button>
+                    <Nav.Link href="#contato">.</Nav.Link>                    
                 </Nav>
                     <ButtonGroup aria-label="Basic example">
                         <Button variant="">
