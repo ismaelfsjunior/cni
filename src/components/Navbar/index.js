@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Navbar, Nav, ButtonGroup, Button, NavDropdown} from "react-bootstrap";
 import './index.scss';
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Navigation = () => (
     <div>
@@ -31,10 +32,11 @@ const Navigation = () => (
                         <Button variant="">
                             <NavDropdown title="Acessos">
                                 <NavDropdown.Item href="#cadastro">Cadastros</NavDropdown.Item>
-                                <NavDropdown.Item href="Gerar_convite">Gerar convite</NavDropdown.Item>
                             </NavDropdown>
                         </Button>
-                        <Button variant="btn btn-success">Converir convite</Button>
+                        <Link to={'lerqrcode'}>
+                            <Button variant="btn btn-success">Converir convite</Button>
+                        </Link>
                     </ButtonGroup>
                 </Navbar.Collapse>
             </Container>
