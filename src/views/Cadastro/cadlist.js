@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { FaQrcode } from 'react-icons/fa';
 import { MdDeleteForever } from 'react-icons/md';
-import api from './api';
+import api from '../../components/Apis/api';
 import "./cadlist.scss";
 
 class App extends Component {
