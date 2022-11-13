@@ -34,7 +34,7 @@ const Navigation = () => (
                                 <NavDropdown.Item href="#cadastro">Cadastros</NavDropdown.Item>
                             </NavDropdown>
                         </Button>
-                        <Link to={'lerqrcode'}>
+                        <Link to={'/lerqrcode'}>
                             <Button variant="btn btn-success">Converir convite</Button>
                         </Link>
                     </ButtonGroup>

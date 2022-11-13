@@ -15,7 +15,7 @@ export default function Lista () {
     });
 
     const getInformacoes = () => {
-        axios.get('http://cninefro.com.br/server/apis/consulta_cadastro.php?cpf=' + cpf)
+        axios.get('https://cninefro.com.br/server/apis/consulta_cadastro.php?cpf=' + cpf)
             .then(response => {
                 setInformacoes(response.data);
         });
