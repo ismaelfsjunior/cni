@@ -41,7 +41,7 @@ const Formcad = () => {
                       </div>
                       <div className="form-box">
                           <h2>Cadastro</h2>  
-                          <form name="signup" method="post" action="http://cninefro.com.br/server/cadastro.php">
+                          <form name="signup" method="post" action="https://cninefro.com.br/server/cadastro.php">
                               <div className="input-group">
                                   <label htmlFor="nome"> Nome Completo</label>
                                   <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required />

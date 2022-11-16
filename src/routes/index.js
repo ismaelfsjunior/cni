@@ -5,6 +5,8 @@ import Newpage from "../views/Qrcode/qrcode";
 import Formcadastro from "../views/Formcadastro/index";
 import Consultacadastro from '../views/Consultacadastro/index';
 import ReadQrCode from '../views/ReadQrCode/index';
+import Lista from '../views/Relatorios/Lista_convidados/index';
+import Impressao from '../views/Relatorios/Lista_convidados/impressao';
 
 export default function Rotas() {
     return(
@@ -15,6 +17,8 @@ export default function Rotas() {
                 <Route path="/Newcad" element={ <Formcadastro />} /> 
                 <Route path="/consultacadastro" element={ <Consultacadastro />} /> 
                 <Route path="/lerqrcode" element={ <ReadQrCode />} /> 
+                <Route path="/lista" element={ <Lista />} /> 
+                <Route path="/impressao" element={ <Impressao />} /> 
             </Routes>
     );
 }

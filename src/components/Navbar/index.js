@@ -7,15 +7,17 @@ import { Link } from "react-router-dom";
 const Navigation = () => (
     <div>
         <Navbar variant="" expand="lg">
-            <Container className="fw-semibold">
-                <Navbar.Brand href="#home">
-                <img
-                    src={logo}
-                    width="100"
-                    className=""
-                    alt="CNI"
-                />            
-                </Navbar.Brand>
+            <Container fluid className="fw-semibold">
+                <Link to={'/'}>
+                    <Navbar.Brand>
+                    <img
+                        src={logo}
+                        width="100"
+                        className=""
+                        alt="CNI"
+                    />            
+                    </Navbar.Brand>                
+                </Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">

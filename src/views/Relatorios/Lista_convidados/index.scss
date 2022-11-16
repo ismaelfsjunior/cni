@@ -1,0 +1,19 @@
+p svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.list-itens {
+    text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+    p svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .list-itens {
+        text-align: unset;
+    }
+}

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { QrReader } from 'react-qr-reader';
 import axios from 'axios';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
+// import { FaCheckCircle } from 'react-icons/fa';
 
 const Qrscan = (props) => {
   const [cpf, setCPF] = useState('No result');
@@ -58,6 +59,17 @@ const Qrscan = (props) => {
                       <h1>{ informacoes['id'] }</h1>                
                   </Col> 
               </Row>
+              <Row>                 
+                  <Col>
+                      <strong> Status </strong>
+                      <h1 className='fs-1 fw-bold'>{ informacoes['conferido'] }</h1>                
+                  </Col> 
+              </Row>  
+              <Row>                 
+                  <Col>
+                    <Button type="button" className="btn btn-success" href={'https://cninefro.com.br/apidelete/confirma_entrada.php?cpf=' + informacoes['cpf'] }>Confirmar</Button>                                 
+                  </Col> 
+              </Row>                           
       </div>
     </Container>
   );

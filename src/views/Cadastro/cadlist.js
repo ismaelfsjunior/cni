@@ -41,7 +41,7 @@ class App extends Component {
                 </Col>
                 <Col className='text-center'>
                     <strong> Deletar </strong>
-                    <p className='qrlist-icon'><a href={"http://cninefro.com.br/apidelete/convidado_delete.php?cpf=" + list.cadastro.cpf} ><MdDeleteForever /></a></p>              
+                    <p className='qrlist-icon'><a href={"https://cninefro.com.br/apidelete/convidado_delete.php?cpf=" + list.cadastro.cpf} ><MdDeleteForever /></a></p>              
                 </Col>                
                 <hr></hr>
             </Row>
