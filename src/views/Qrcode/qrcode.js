@@ -33,7 +33,7 @@ const qrcode = () => {
                                 src={logo} 
                             />
                         </Col>
-                        <Col className="pe-5">     
+                        {/* <Col className="pe-5">     
                             <Card.Img 
                                 id="Pagereturn" 
                                 onClick={cadastro} 
@@ -41,14 +41,19 @@ const qrcode = () => {
                                 variant="top" 
                                 src={logocdr} 
                             />
-                        </Col>
+                        </Col> */}
                     </Row>                    
-                    <Card.Title className="fs-1 fw-bold">Convite Individual</Card.Title>
+                    <Card.Title className="pt-2 fs-1 fw-bold bg-gradient-warning">Convite Individual</Card.Title>
                         <Card.Text>
-                            <p className="mt-2 fs-6 card-text-p fw-bold">Chegou o final de mais um ano de muito trabalho e sucesso!</p> 
-                            <p className="mt-2 px-4 fs-6 card-text-p fw-bold">Aproveitamos para agradecer a todos pela incansável dedicação demonstrada ao longo deste ano e desejar a todos um Natal abençoado, repleto de muitas felicidades e um Feliz 2023!</p>
-                            <p className="mt-2 px-4 fs-6 card-text-p fw-bold">Desta forma, convidamos você para festa de confraternização CNI & CDR que se realizará dia 10 de dezembro de 2022, às 20:00h  no</p>
-                            <p className="px-4 fs-4 card-text-p fw-bold">El Shaddai Eventos.</p>                            
+                            <p className="mt-2 fs-6 card-text-p fw-bold bg-gradient-warning text-white">Chegamos ao final de mais um ano de muito trabalho e mudanças!</p> 
+                            <p className="mt-2 px-4 fs-6 card-text-p fw-bold bg-gradient-warning text-white"> 
+                                E é neste ritmo de vitória que convidamos você para <span className="shadow-sm mb-5 rounded fst-italic fw-bold"><i><string>FESTA DE CONFRATENIZAÇÃO CNI</string></i></span>,  
+                                onde teremos a oportunidade de comemorar mais um ano de 
+                                muitas conquistas e dividir as expectativas para o futuro.
+                            </p>
+                            <p className="mt-2 px-4 fs-6 card-text-p fw-bold bg-gradient-dark text-white">Será dia 30 de Novembro de 2024, a partir das 20:00h no</p>
+                            <p className="mt-2 px-4 fs-6 card-text-p fw-bold bg-gradient-dark text-white">El Shaddai Eventos.</p>
+                            {/* <p className="px-2 fs-2 card-text-p fw-bold bg-gradient-warning text-white">El Shaddai Eventos.</p>                             */}
                         </Card.Text>                    
                 <QRCode className="qrcode"
                     value={cpf} 
@@ -56,12 +61,12 @@ const qrcode = () => {
                     style={{ height: "16rem",maxWidth: "100%", width: "90%" }}
                     viewBox={`0 0 256 256`}                
                 />
-                <p className="card-text-p fw-bold">{numid} - {nome}</p>
-                <Card.Body>
+                <p className="pt-2 card-text-p fw-bold bg-gradient-warning text-white">{numid} - {nome}</p>
+                <Card.Body className="">
                     <Card.Text>
-                        <p className="fs-5 card-text-p fw-bold">Este convite é pessoal e intransferível.</p>
-                        <p className="mt-2 fs-5 card-text-p fw-bold">É obrigatória a apresentação do documento com foto.</p>
-                        <p className="mt-2 fs-5 card-text-p fw-bold">Sua presença é indispensável!</p>
+                        <p className="fs-5 card-text-p fw-bold bg-gradient-warning text-white">Este convite é pessoal e intransferível.</p>
+                        <p className=" fs-5 card-text-p fw-bold bg-gradient-warning text-white">É obrigatória a apresentação do documento com foto.</p>
+                        <p className="mt-2 fs-5 card-text-p fw-bold bg-gradient-warning text-white">Sua presença é indispensável!</p>
                     </Card.Text>
                 </Card.Body>
                 <Card.Img id="printPageButton" onClick={download} className="d-flex justify-content-center img-footer" src={down}/>
