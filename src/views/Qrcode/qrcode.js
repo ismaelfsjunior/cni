@@ -47,7 +47,7 @@ const qrcode = () => {
                         <Card.Text>
                             <p className="mt-2 fs-6 card-text-p fw-bold bg-gradient-warning text-white">Chegamos ao final de mais um ano de muito trabalho e mudanças!</p> 
                             <p className="mt-2 px-4 fs-6 card-text-p fw-bold bg-gradient-warning text-white"> 
-                                E é neste ritmo de vitória que convidamos você para <span className="shadow-sm mb-5 rounded fst-italic fw-bold"><i><string>FESTA DE CONFRATENIZAÇÃO CNI</string></i></span>,  
+                                Em ritmo de vitória que convidamos você para <span className="shadow-sm mb-5 rounded fst-italic fw-bold"><i><string>FESTA DE CONFRATERNIZAÇÃO CNI</string></i></span>,  
                                 onde teremos a oportunidade de comemorar mais um ano de 
                                 muitas conquistas e dividir as expectativas para o futuro.
                             </p>

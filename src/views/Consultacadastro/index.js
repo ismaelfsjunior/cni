@@ -17,9 +17,9 @@ const Consultacadastro = () => {
                 <div className="img-box">
                     <img src={logocni} alt="" />
                 </div>
-                <div className="img-box">    
+                {/* <div className="img-box">    
                     <img src={logocdr} alt="" />
-                </div>
+                </div> */}
                 <div className="form-box">
                     <Consulta />    
                 </div>
