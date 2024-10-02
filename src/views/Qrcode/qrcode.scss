@@ -8,11 +8,13 @@
      background-image: url("../../assets/natal2.png");
      background-size: cover;
      background-position: center;
+     -webkit-print-color-adjust: exact;
+     print-color-adjust: exact;
 }
 
 .card-Img {
     margin: auto;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     //margin-bottom: 1rem;
     padding: 0;
     width: 9.5rem !important;
